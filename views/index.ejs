@@ -1,38 +1,157 @@
-<!DOCTYPE html>
-<html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Popken Web Solutions | Websites, webshops op maat</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Popken Web Solutions | Websites, webshops op maat</title>
 
-    <link rel="stylesheet" href="css/output.css" />
-  </head>
-  <body class="bg-[#efefef]">
-    <header id="navbar" class="bg-transparent absolute w-full z-10">
-      <nav
-        class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:py-0 lg:px-8"
-        aria-label="Global"
-      >
-        <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Popken Web Solutions</span>
-            <picture>
-              <source srcset="images/logo.webp" type="image/webp" />
-              <source srcset="images/logo.png" type="image/png" />
-              <img class="h-12 w-auto" src="images/logo.png" alt="" />
-            </picture>
-          </a>
-        </div>
-        <div class="flex lg:hidden">
-          <button
-            type="button"
-            id="open-mobile-nav"
-            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+  <link rel="stylesheet" href="css/output.css" />
+</head>
+<body class="bg-[#efefef]">
+  <header id="navbar" class="bg-transparent absolute w-full z-10">
+    <nav
+      class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:py-0 lg:px-8"
+      aria-label="Global"
+    >
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Popken Web Solutions</span>
+          <picture>
+            <source srcset="images/logo.webp" type="image/webp" />
+            <source srcset="images/logo.png" type="image/png" />
+            <img class="h-12 w-auto" src="images/logo.png" alt="" />
+          </picture>
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button
+          type="button"
+          id="open-mobile-nav"
+          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+        >
+          <span class="sr-only">Open menu</span>
+          <svg
+            class="h-6 w-6 text-slate-900"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
           >
-            <span class="sr-only">Open menu</span>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a
+          href="#"
+          class="py-8 text-sm font-semibold leading-6 hover:text-red-500"
+          >Home</a
+        >
+        <div class="dropdown relative">
+          <button
+            id="dropdownNavbarLink"
+            data-dropdown-toggle="dropdownNavbar"
+            class="flex items-center text-sm font-semibold leading-6 text-gray-900 hover:text-red-700 py-8"
+          >
+            Websites
             <svg
-              class="h-6 w-6 text-slate-900"
+              class="w-5 h-5 ml-1"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdownNavbar"
+            class="overflow-hidden z-10 absolute font-normal bg-white divide-y divide-gray-100 rounded-b-md shadow w-44 border"
+          >
+            <ul
+              class="text-sm text-gray-700"
+              aria-labelledby="dropdownLargeButton"
+            >
+              <li>
+                <a href="/website" class="block px-4 py-2 hover:bg-gray-200"
+                  >Website laten maken</a
+                >
+              </li>
+              <li>
+                <a href="/webshop" class="block px-4 py-2 hover:bg-gray-200"
+                  >Webshop laten maken</a
+                >
+              </li>
+              <li>
+                <a href="/webbeheer" class="block px-4 py-2 hover:bg-gray-200"
+                  >Website beheer</a
+                >
+              </li>
+              <li>
+                <a href="/faq" class="block px-4 py-2 hover:bg-gray-200">
+                  Veelgestelde vragen
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a
+          href="/about"
+          class="text-sm font-semibold leading-6 text-gray-900 hover:text-red-700 py-8"
+          >Over Ons</a
+        >
+        <a
+          href="/contact"
+          class="text-sm font-semibold leading-6 text-gray-900 hover:text-red-700 py-8"
+          >Contact</a
+        >
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a
+          href="/contact"
+          class="text-sm font-semibold leading-6 bg-red-500 rounded-md py-1.5 px-4 text-white hover:bg-red-700"
+          >Offerte aanvragen</a
+        >
+      </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div
+      id="mobile-nav"
+      class="lg:hidden hidden"
+      role="dialog"
+      aria-modal="true"
+    >
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-10"></div>
+      <div
+        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+      >
+        <div class="flex items-center justify-between">
+          <a href="index.html" class="-m-1.5 p-1.5">
+            <span class="sr-only">Popken Web Solutions</span>
+            <img
+              class="h-12 w-auto"
+              src="images/logo.png"
+              alt="Logo Popken Web Solutions"
+            />
+          </a>
+          <button
+            id="close-mobile-nav"
+            type="button"
+            class="-m-2.5 rounded-md p-2.5 text-gray-700"
+          >
+            <span class="sr-only">Sluit menu</span>
+            <svg
+              class="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
@@ -42,650 +161,371 @@
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                d="M6 18L18 6M6 6l12 12"
               />
             </svg>
           </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a
-            href="#"
-            class="py-8 text-sm font-semibold leading-6 hover:text-red-500"
-            >Home</a
-          >
-          <div class="dropdown relative">
-            <button
-              id="dropdownNavbarLink"
-              data-dropdown-toggle="dropdownNavbar"
-              class="flex items-center text-sm font-semibold leading-6 text-gray-900 hover:text-red-700 py-8"
-            >
-              Websites
-              <svg
-                class="w-5 h-5 ml-1"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Home</a
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-            <!-- Dropdown menu -->
-            <div
-              id="dropdownNavbar"
-              class="overflow-hidden z-10 absolute font-normal bg-white divide-y divide-gray-100 rounded-b-md shadow w-44 border"
-            >
-              <ul
-                class="text-sm text-gray-700"
-                aria-labelledby="dropdownLargeButton"
-              >
-                <li>
-                  <a href="/website" class="block px-4 py-2 hover:bg-gray-200"
-                    >Website laten maken</a
-                  >
-                </li>
-                <li>
-                  <a href="/webshop" class="block px-4 py-2 hover:bg-gray-200"
-                    >Webshop laten maken</a
-                  >
-                </li>
-                <li>
-                  <a href="/webbeheer" class="block px-4 py-2 hover:bg-gray-200"
-                    >Website beheer</a
-                  >
-                </li>
-                <li>
-                  <a href="/faq" class="block px-4 py-2 hover:bg-gray-200">
-                    Veelgestelde vragen
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <a
-            href="/about"
-            class="text-sm font-semibold leading-6 text-gray-900 hover:text-red-700 py-8"
-            >Over Ons</a
-          >
-          <a
-            href="/contact"
-            class="text-sm font-semibold leading-6 text-gray-900 hover:text-red-700 py-8"
-            >Contact</a
-          >
-        </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a
-            href="/contact"
-            class="text-sm font-semibold leading-6 bg-red-500 rounded-md py-1.5 px-4 text-white hover:bg-red-700"
-            >Offerte aanvragen</a
-          >
-        </div>
-      </nav>
-      <!-- Mobile menu, show/hide based on menu open state. -->
-      <div
-        id="mobile-nav"
-        class="lg:hidden hidden"
-        role="dialog"
-        aria-modal="true"
-      >
-        <!-- Background backdrop, show/hide based on slide-over state. -->
-        <div class="fixed inset-0 z-10"></div>
-        <div
-          class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
-        >
-          <div class="flex items-center justify-between">
-            <a href="index.html" class="-m-1.5 p-1.5">
-              <span class="sr-only">Popken Web Solutions</span>
-              <img
-                class="h-12 w-auto"
-                src="images/logo.png"
-                alt="Logo Popken Web Solutions"
-              />
-            </a>
-            <button
-              id="close-mobile-nav"
-              type="button"
-              class="-m-2.5 rounded-md p-2.5 text-gray-700"
-            >
-              <span class="sr-only">Sluit menu</span>
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
-          <div class="mt-6 flow-root">
-            <div class="-my-6 divide-y divide-gray-500/10">
-              <div class="space-y-2 py-6">
-                <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Home</a
+              <div class="-mx-3">
+                <button
+                  id="mobile-dropdown-btn"
+                  type="button"
+                  class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  aria-controls="disclosure-1"
+                  aria-expanded="false"
                 >
-                <div class="-mx-3">
-                  <button
-                    id="mobile-dropdown-btn"
-                    type="button"
-                    class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    aria-controls="disclosure-1"
-                    aria-expanded="false"
-                  >
-                    Websites
-                    <!--
+                  Websites
+                  <!--
                   Expand/collapse icon, toggle classes based on menu open state.
 
                   Open: "rotate-180", Closed: ""
                 -->
-                    <svg
-                      id="mobileDropdownIcon"
-                      class="h-5 w-5 flex-none rotate-90 transition-all duration-300"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </button>
-                  <!-- 'Product' sub-menu, show/hide based on menu state. -->
-                  <div class="mt-2 space-y-2 hidden" id="disclosure-1">
-                    <a
-                      href="website.html"
-                      class="block rounded-lg py-2 pl-6 pr-3 text-md font-medium leading-7 text-gray-900 hover:bg-gray-50"
-                      >Website laten maken</a
-                    >
-                    <a
-                      href="webshop.html"
-                      class="block rounded-lg py-2 pl-6 pr-3 text-md font-medium leading-7 text-gray-900 hover:bg-gray-50"
-                      >Webshop laten maken</a
-                    >
-                    <a
-                      href="management.html"
-                      class="block rounded-lg py-2 pl-6 pr-3 text-md font-medium leading-7 text-gray-900 hover:bg-gray-50"
-                      >Website beheer</a
-                    >
-                    <a
-                      href="faq.html"
-                      class="block rounded-lg py-2 pl-6 pr-3 text-md font-medium leading-7 text-gray-900 hover:bg-gray-50"
-                      >Veelgestelde Vragen</a
-                    >
-                  </div>
+                  <svg
+                    id="mobileDropdownIcon"
+                    class="h-5 w-5 flex-none rotate-90 transition-all duration-300"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                <div class="mt-2 space-y-2 hidden" id="disclosure-1">
+                  <a
+                    href="website.html"
+                    class="block rounded-lg py-2 pl-6 pr-3 text-md font-medium leading-7 text-gray-900 hover:bg-gray-50"
+                    >Website laten maken</a
+                  >
+                  <a
+                    href="webshop.html"
+                    class="block rounded-lg py-2 pl-6 pr-3 text-md font-medium leading-7 text-gray-900 hover:bg-gray-50"
+                    >Webshop laten maken</a
+                  >
+                  <a
+                    href="management.html"
+                    class="block rounded-lg py-2 pl-6 pr-3 text-md font-medium leading-7 text-gray-900 hover:bg-gray-50"
+                    >Website beheer</a
+                  >
+                  <a
+                    href="faq.html"
+                    class="block rounded-lg py-2 pl-6 pr-3 text-md font-medium leading-7 text-gray-900 hover:bg-gray-50"
+                    >Veelgestelde Vragen</a
+                  >
                 </div>
-                <a
-                  href="about.html"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Over Ons</a
-                >
-                <a
-                  href="contact.html"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Contact</a
-                >
               </div>
-              <div class="py-6">
-                <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Log in</a
-                >
-              </div>
+              <a
+                href="about.html"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Over Ons</a
+              >
+              <a
+                href="contact.html"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Contact</a
+              >
+            </div>
+            <div class="py-6">
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Log in</a
+              >
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Hero section -->
-    <section
-      id="hero"
-      class="bg-white relative h-[100vh] flex flex-col items-center justify-center"
-    >
-      <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
-        <h1
-          class="mb-6 text-4xl max-w-4xl mx-auto font-extrabold tracking-tight leading-none text-gray-800 md:text-5xl lg:text-6xl font-sans"
+  <!-- Hero section -->
+  <section
+    id="hero"
+    class="bg-white relative h-[100vh] flex flex-col items-center justify-center"
+  >
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+      <h1
+        class="mb-6 text-4xl max-w-4xl mx-auto font-extrabold tracking-tight leading-none text-gray-800 md:text-5xl lg:text-6xl font-sans"
+      >
+        Kwalitatieve oplossingen voor jouw online succes.
+      </h1>
+      <p
+        class="mb-8 text-lg font-normal text-gray-600 lg:text-lg sm:px-16 lg:px-48"
+      >
+        Betrouwbare ondersteuning voor jouw online succesverhaal, van begin tot
+        eind.
+      </p>
+      <div
+        class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
+      >
+        <a
+          href="contact.html"
+          class="inline-flex justify-center items-center py-2 px-4 text-sm font-semibold text-center text-white rounded-lg bg-red-500 hover:bg-red-700 focus:ring-4 focus:ring-red-300"
         >
-          Kwalitatieve oplossingen voor jouw online succes.
-        </h1>
-        <p
-          class="mb-8 text-lg font-normal text-gray-600 lg:text-lg sm:px-16 lg:px-48"
+          Vraag offerte aan
+        </a>
+
+        <a
+          href="website.html"
+          class="inline-flex justify-center font-sans items-center text-sm font-medium text-center text-gray-800"
         >
-          Betrouwbare ondersteuning voor jouw online succesverhaal, van begin
-          tot eind.
-        </p>
-        <div
-          class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
-        >
-          <a
-            href="contact.html"
-            class="inline-flex justify-center items-center py-2 px-4 text-sm font-semibold text-center text-white rounded-lg bg-red-500 hover:bg-red-700 focus:ring-4 focus:ring-red-300"
+          Meer informatie
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6 ml-2"
           >
-            Vraag offerte aan
+            <path
+              fill-rule="evenodd"
+              d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <a href="#cards">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="w-7 h-7 absolute bottom-4 left-50 translate-x-[-50%] hover:translate-y-[-5px] transition-all duration-300"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M12 2.25a.75.75 0 01.75.75v16.19l6.22-6.22a.75.75 0 111.06 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06l6.22 6.22V3a.75.75 0 01.75-.75z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </a>
+  </section>
+
+  <!-- What we do section -->
+  <section id="cards" class="max-w-[1280px] px-4 mx-auto py-[96px]">
+    <div class="flex gap-4 flex-wrap justify-center">
+      <div
+        class="xl:max-w-sm max-w-xs bg-white border border-gray-200 rounded-lg shadow"
+      >
+        <a href="#design">
+          <picture>
+            <source srcset="images/figma.webp" type="image/webp" />
+            <source srcset="images/figma.png" type="image/png" />
+            <img
+              class="rounded-t-lg h-[200px] w-full"
+              src="images/figma.png"
+              alt=""
+            />
+          </picture>
+        </a>
+        <div class="p-5">
+          <a href="#design">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-red-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"
+                />
+              </svg>
+              UI/UX Design
+            </h5>
           </a>
-
+          <p class="mb-3 font-normal text-gray-700">
+            Ervaar onze expertise in UI/UX design. Met aandacht voor detail en
+            een gebruikersgerichte aanpak creëren wij boeiende, intuïtieve
+            interfaces die jouw merk laten opvallen. Samen bouwen we een
+            naadloze gebruikerservaring die conversies verhoogt en resultaten
+            oplevert voor jouw bedrijf.
+          </p>
           <a
-            href="website.html"
-            class="inline-flex justify-center font-sans items-center text-sm font-medium text-center text-gray-800"
+            href="#design"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300"
           >
-            Meer informatie
+            Lees meer
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
+              aria-hidden="true"
+              class="w-4 h-4 ml-2 -mr-1"
               fill="currentColor"
-              class="w-6 h-6 ml-2"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 fill-rule="evenodd"
-                d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 clip-rule="evenodd"
-              />
+              ></path>
             </svg>
           </a>
         </div>
       </div>
-      <a href="#cards">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="w-7 h-7 absolute bottom-4 left-50 translate-x-[-50%] hover:translate-y-[-5px] transition-all duration-300"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M12 2.25a.75.75 0 01.75.75v16.19l6.22-6.22a.75.75 0 111.06 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06l6.22 6.22V3a.75.75 0 01.75-.75z"
-            clip-rule="evenodd"
-          />
-        </svg>
-      </a>
-    </section>
-
-    <!-- What we do section -->
-    <section id="cards" class="max-w-[1280px] px-4 mx-auto py-[96px]">
-      <div class="flex gap-4 flex-wrap justify-center">
-        <div
-          class="xl:max-w-sm max-w-xs bg-white border border-gray-200 rounded-lg shadow"
-        >
-          <a href="#design">
-            <picture>
-              <source srcset="images/figma.webp" type="image/webp" />
-              <source srcset="images/figma.png" type="image/png" />
-              <img
-                class="rounded-t-lg h-[200px] w-full"
-                src="images/figma.png"
-                alt=""
-              />
-            </picture>
-          </a>
-          <div class="p-5">
-            <a href="#design">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6 text-red-500"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"
-                  />
-                </svg>
-                UI/UX Design
-              </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700">
-              Ervaar onze expertise in UI/UX design. Met aandacht voor detail en
-              een gebruikersgerichte aanpak creëren wij boeiende, intuïtieve
-              interfaces die jouw merk laten opvallen. Samen bouwen we een
-              naadloze gebruikerservaring die conversies verhoogt en resultaten
-              oplevert voor jouw bedrijf.
-            </p>
-            <a
-              href="#design"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300"
-            >
-              Lees meer
-              <svg
-                aria-hidden="true"
-                class="w-4 h-4 ml-2 -mr-1"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div
-          class="xl:max-w-sm max-w-xs bg-white border border-gray-200 rounded-lg shadow"
-        >
+      <div
+        class="xl:max-w-sm max-w-xs bg-white border border-gray-200 rounded-lg shadow"
+      >
+        <a href="#web">
+          <picture>
+            <source srcset="images/ecom.webp" type="image/webp" />
+            <source srcset="images/ecom.png" type="image/png" />
+            <img
+              class="rounded-t-lg h-[200px] w-full"
+              src="images/ecom.png"
+              alt=""
+            />
+          </picture>
+        </a>
+        <div class="p-5">
           <a href="#web">
-            <picture>
-              <source srcset="images/ecom.webp" type="image/webp" />
-              <source srcset="images/ecom.png" type="image/png" />
-              <img
-                class="rounded-t-lg h-[200px] w-full"
-                src="images/ecom.png"
-                alt=""
-              />
-            </picture>
-          </a>
-          <div class="p-5">
-            <a href="#web">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6 text-red-500"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"
-                  />
-                </svg>
-
-                Websites en webshops
-              </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700">
-              Ontdek onze expertise in het bouwen van websites en webshops. Met
-              zorgvuldig ontwerp en aandacht voor gebruikerservaring creëren wij
-              online platformen die indruk maken. Samen transformeren we jouw
-              ideeën naar effectieve digitale oplossingen die jouw bedrijf laten
-              groeien.
-            </p>
-            <a
-              href="#web"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300"
-            >
-              Lees meer
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">
               <svg
-                aria-hidden="true"
-                class="w-4 h-4 ml-2 -mr-1"
-                fill="currentColor"
-                viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-red-500"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"
+                />
               </svg>
-            </a>
-          </div>
+
+              Websites en webshops
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700">
+            Ontdek onze expertise in het bouwen van websites en webshops. Met
+            zorgvuldig ontwerp en aandacht voor gebruikerservaring creëren wij
+            online platformen die indruk maken. Samen transformeren we jouw
+            ideeën naar effectieve digitale oplossingen die jouw bedrijf laten
+            groeien.
+          </p>
+          <a
+            href="#web"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300"
+          >
+            Lees meer
+            <svg
+              aria-hidden="true"
+              class="w-4 h-4 ml-2 -mr-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
         </div>
-        <div
-          class="xl:max-w-sm max-w-xs relative bg-white border border-gray-200 rounded-lg shadow"
-        >
+      </div>
+      <div
+        class="xl:max-w-sm max-w-xs relative bg-white border border-gray-200 rounded-lg shadow"
+      >
+        <a href="#onderhoud">
+          <picture>
+            <source srcset="images/onderhoud.webp" type="image/webp" />
+            <source srcset="images/onderhoud.png" type="image/png" />
+            <img
+              class="rounded-t-lg h-[200px] w-full"
+              src="images/onderhoud.png"
+              alt=""
+            />
+          </picture>
+        </a>
+        <div class="p-5">
           <a href="#onderhoud">
-            <picture>
-              <source srcset="images/onderhoud.webp" type="image/webp" />
-              <source srcset="images/onderhoud.png" type="image/png" />
-              <img
-                class="rounded-t-lg h-[200px] w-full"
-                src="images/onderhoud.png"
-                alt=""
-              />
-            </picture>
-          </a>
-          <div class="p-5">
-            <a href="#onderhoud">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6 text-red-500"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
-                  />
-                </svg>
-
-                Onderhoud & Updates
-              </h5>
-            </a>
-            <p class="xl:mb-9 mb-3 font-normal text-gray-700">
-              Ervaar hoe wij jou ontzorgen met professioneel onderhoud en
-              regelmatige updates voor jouw website of webshop. Wij zorgen
-              ervoor dat je online platform altijd up-to-date blijft en
-              probleemloos blijft functioneren, zodat jij je kunt focussen op je
-              kernactiviteiten.
-            </p>
-            <a
-              href="#onderhoud"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300"
-            >
-              Lees meer
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">
               <svg
-                aria-hidden="true"
-                class="w-4 h-4 ml-2 -mr-1"
-                fill="currentColor"
-                viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-red-500"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
+                />
               </svg>
-            </a>
-          </div>
+
+              Onderhoud & Updates
+            </h5>
+          </a>
+          <p class="xl:mb-9 mb-3 font-normal text-gray-700">
+            Ervaar hoe wij jou ontzorgen met professioneel onderhoud en
+            regelmatige updates voor jouw website of webshop. Wij zorgen ervoor
+            dat je online platform altijd up-to-date blijft en probleemloos
+            blijft functioneren, zodat jij je kunt focussen op je
+            kernactiviteiten.
+          </p>
+          <a
+            href="#onderhoud"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-500 rounded-lg hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300"
+          >
+            Lees meer
+            <svg
+              aria-hidden="true"
+              class="w-4 h-4 ml-2 -mr-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Content section -->
-    <section
-      id="content"
-      class="text-slate-600 body-font pb-[48px] lg:pb-0 max-w-[1280px] mx-auto"
+  <!-- Content section -->
+  <section
+    id="content"
+    class="text-slate-600 body-font pb-[48px] lg:pb-0 max-w-[1280px] mx-auto"
+  >
+    <div
+      id="design"
+      class="grid grid-cols-1 lg:grid-cols-2 gap-x-2 items-center border-b-2 py-[48px] lg:py-[96px] px-8 lg:px-4 border-dotted border-[#a9a9a9]"
     >
-      <div
-        id="design"
-        class="grid grid-cols-1 lg:grid-cols-2 gap-x-2 items-center border-b-2 py-[48px] lg:py-[96px] px-8 lg:px-4 border-dotted border-[#a9a9a9]"
-      >
-        <picture>
-          <source srcset="images/figma.webp" type="image/webp" />
-          <source srcset="images/figma.png" type="image/png" />
-          <img
-            class="w-[100%] max-h-[350px] rounded-md drop-shadow-lg mb-8 lg:mb-0"
-            src="images/figma.png"
-            alt=""
-          />
-        </picture>
-        <div class="lg:px-5">
-          <div>
-            <h1
-              class="text-[#a9a9a9]/25 text-center text-5xl font-bold mb-[-14px]"
-              style="
-                background: -webkit-linear-gradient(
-                  #a9a9a9 0%,
-                  #a9a9a97c 50%,
-                  #efefef 100%
-                );
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-              "
-            >
-              UI/UX Design
-            </h1>
-            <h3 class="text-center text-3xl font-bold mb-4 text-red-500 z-10">
-              UI/UX Design
-            </h3>
-          </div>
-          <p class="text-gray-600">
-            Ontdek onze deskundigheid in gebruiksvriendelijk ontwerp. We
-            begrijpen wat jouw klanten willen en creëren boeiende en eenvoudig
-            te gebruiken websites en apps die jouw bedrijf laten groeien.
-            <br /><br />
-            Bij ons draait alles om het vinden van de perfecte balans tussen
-            stijl en functionaliteit. We zorgen ervoor dat jouw website er
-            geweldig uitziet én intuïtief is om te navigeren, zodat jouw klanten
-            moeiteloos kunnen vinden wat ze nodig hebben.
-            <br /><br />
-            Van het maken van prototypes tot het ontwerpen van aantrekkelijke
-            interfaces, we zijn er om jouw visie werkelijkheid te maken. Samen
-            creëren we een online ervaring die jouw klanten aanspreekt, hun
-            betrokkenheid vergroot en je bedrijf laat groeien.
-            <br /><br />
-            Kies voor onze passie en toewijding aan uitmuntend ontwerp. Samen
-            zetten we jouw bedrijf op de digitale kaart en zorgen we ervoor dat
-            jouw klanten keer op keer terugkomen.
-          </p>
-        </div>
-      </div>
-      <div
-        id="web"
-        class="grid grid-cols-1 lg:grid-cols-2 items-center py-[48px] lg:py-[96px] px-8 border-b-2 border-dotted border-[#a9a9a9] gap-x-2 lg:px-4"
-      >
-        <div class="lg:px-5 z-row-col">
-          <div>
-            <h1
-              class="text-[#a9a9a9]/25 text-center text-5xl font-bold mb-[-14px]"
-              style="
-                background: -webkit-linear-gradient(
-                  #a9a9a9 0%,
-                  #a9a9a97c 50%,
-                  #efefef 100%
-                );
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-              "
-            >
-              Websites & Webshops
-            </h1>
-            <h3 class="text-center text-3xl font-bold mb-4 text-red-500">
-              Websites & Webshops
-            </h3>
-          </div>
-          <p class="text-gray-600">
-            Ontdek onze expertise in het bouwen van websites en webshops op
-            maat. Wij begrijpen dat een professionele online aanwezigheid
-            essentieel is voor jouw bedrijfssucces. Met onze toegewijde aanpak
-            zorgen we ervoor dat jouw website of webshop precies aansluit bij
-            jouw wensen en behoeften.
-            <br /><br />
-            Met een gemiddelde ontwikkeltijd van 1 á 2 maanden, nemen we de tijd
-            om jouw website of webshop tot in de puntjes te realiseren. Onze
-            maatwerkoplossingen zorgen ervoor dat elke pagina en functie perfect
-            afgestemd is op jouw bedrijf en doelgroep.
-            <br /><br />
-            Voor webshops implementeren we een gebruiksvriendelijk
-            winkelwagensysteem en bieden we integraties met iDEAL en
-            creditcardbetalingen, zodat jouw klanten eenvoudig en veilig kunnen
-            afrekenen.
-            <br /><br />
-            Samen creëren we een krachtige online aanwezigheid die jouw merk
-            laat stralen en jouw producten of diensten effectief presenteert aan
-            jouw doelgroep.
-          </p>
-        </div>
-        <picture>
-          <source srcset="images/ecom.webp" type="image/webp" />
-          <source srcset="images/ecom.png" type="image/png" />
-          <img
-            class="w-[100%] max-h-[350px] rounded-md drop-shadow-lg mb-8 lg:mb-0"
-            src="images/ecom.png"
-            alt=""
-          />
-        </picture>
-      </div>
-      <div
-        id="onderhoud"
-        class="grid grid-cols-1 lg:grid-cols-2 items-center pt-[48px] lg:py-[96px] px-8 gap-x-2 lg:px-4"
-      >
-        <picture>
-          <source srcset="images/onderhoud.webp" type="image/webp" />
-          <source srcset="images/onderhoud.png" type="image/png" />
-          <img
-            class="w-[100%] max-h-[350px] rounded-md drop-shadow-lg mb-8 lg:mb-0"
-            src="images/onderhoud.png"
-            alt=""
-          />
-        </picture>
-        <div class="lg:px-5">
-          <div>
-            <h1
-              class="text-[#a9a9a9]/25 text-center text-5xl font-bold mb-[-14px]"
-              style="
-                background: -webkit-linear-gradient(
-                  #a9a9a9 0%,
-                  #a9a9a97c 50%,
-                  #efefef 100%
-                );
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-              "
-            >
-              Onderhoud & Updates
-            </h1>
-            <h3 class="text-center text-3xl font-bold mb-4 text-red-500">
-              Onderhoud & Updates
-            </h3>
-          </div>
-          <p class="text-gray-600">
-            Bij ons kun je rekenen op betrouwbaar onderhoud en frequente updates
-            voor jouw website. Hoewel we momenteel niet werken met een Content
-            Management Systeem (CMS), zorgen wij ervoor dat jouw website altijd
-            up-to-date blijft.
-            <br /><br />
-            Ons toegewijde team staat 24/7 voor je klaar om eventuele
-            aanpassingen of verbeteringen aan jouw website te realiseren. Of het
-            nu gaat om kleine wijzigingen of grotere aanpassingen, wij bieden
-            flexibele oplossingen die aansluiten bij jouw specifieke behoeften.
-            <br /><br />
-            Wij luisteren naar jouw wensen en passen de website aan volgens jouw
-            specificaties. Jouw tevredenheid staat bij ons centraal, en wij
-            streven ernaar om jouw website continu te optimaliseren, zodat deze
-            perfect aansluit bij jouw visie en doelstellingen.
-            <br /><br />
-            Met ons onderhouds- en updateservicepakket kun je gerust zijn,
-            wetende dat jouw website in goede handen is en altijd klaar is om
-            jouw bedrijf te ondersteunen en te laten groeien.
-          </p>
-        </div>
-      </div>
-      <div></div>
-      <div></div>
-    </section>
-
-    <!-- Portfolio/Cases section -->
-    <section class="py-[96px]">
-      <div class="max-w-[1280px] mx-auto">
+      <picture>
+        <source srcset="images/figma.webp" type="image/webp" />
+        <source srcset="images/figma.png" type="image/png" />
+        <img
+          class="w-[100%] max-h-[350px] rounded-md drop-shadow-lg mb-8 lg:mb-0"
+          src="images/figma.png"
+          alt=""
+        />
+      </picture>
+      <div class="lg:px-5">
         <div>
           <h1
             class="text-[#a9a9a9]/25 text-center text-5xl font-bold mb-[-14px]"
@@ -695,200 +535,347 @@
                 #a9a9a97c 50%,
                 #efefef 100%
               );
-              -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
             "
           >
-            Recente Opdrachten & Projecten
+            UI/UX Design
           </h1>
           <h3 class="text-center text-3xl font-bold mb-4 text-red-500 z-10">
-            Recente Opdrachten & Projecten
+            UI/UX Design
           </h3>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8">
-          <div class="rounded-lg overflow-hidden relative">
-            <a href="https://hyperfitness.netlify.app/">
-              <picture>
-                <source
-                  srcset="images/mockups/mockup-hyperfitness.webp"
-                  type="image/webp"
-                />
-                <source
-                  srcset="images/mockups/mockup-hyperfitness.png"
-                  type="image/png"
-                />
-                <img
-                  class="h-[350px] w-full object-cover hover:bg-red-400"
-                  src="images/mockups/mockup-hyperfitness.png"
-                  alt=""
-                />
-              </picture>
-            </a>
-            <p
-              class="absolute bottom-5 left-[50%] translate-x-[-50%] font-bold text-2xl text-gray-800 lg:text-[#efefef]"
-            >
-              Hyperfitness
-            </p>
-          </div>
-          <div class="rounded-lg overflow-hidden relative">
-            <a href="https://thecarbuyersguide.netlify.app/">
-              <picture>
-                <source
-                  srcset="images/mockups/mockup-TCBG.webp"
-                  type="image/webp"
-                />
-                <source
-                  srcset="images/mockups/mockup-TCBG.png"
-                  type="image/png"
-                />
-                <img
-                  class="h-[350px] w-full object-cover hover:bg-red-400"
-                  src="images/mockups/mockup-TCBG.png"
-                  alt=""
-                />
-              </picture>
-            </a>
-            <p
-              class="absolute bottom-5 left-[50%] w-full translate-x-[-50%] font-bold text-2xl text-gray-800 lg:text-[#efefef] text-center leading-6"
-            >
-              The Car Buyers Guide
-            </p>
-          </div>
-          <div class="rounded-lg overflow-hidden relative">
-            <a href="https://earthenwarepottery.netlify.app/">
-              <picture>
-                <source
-                  srcset="images/mockups/mockup-earthenware.webp"
-                  type="image/webp"
-                />
-                <source
-                  srcset="images/mockups/mockup-earthenware.png"
-                  type="image/png"
-                />
-                <img
-                  class="h-[350px] w-full object-cover hover:bg-red-400"
-                  src="images/mockups/mockup-earthenware.png"
-                  alt=""
-                />
-              </picture>
-            </a>
-            <p
-              class="absolute bottom-5 w-full left-[50%] translate-x-[-50%] font-bold text-2xl text-gray-800 lg:text-[#efefef] text-center leading-6"
-            >
-              Earthenware Pottery
-            </p>
-          </div>
-        </div>
+        <p class="text-gray-600">
+          Ontdek onze deskundigheid in gebruiksvriendelijk ontwerp. We begrijpen
+          wat jouw klanten willen en creëren boeiende en eenvoudig te gebruiken
+          websites en apps die jouw bedrijf laten groeien.
+          <br /><br />
+          Bij ons draait alles om het vinden van de perfecte balans tussen stijl
+          en functionaliteit. We zorgen ervoor dat jouw website er geweldig
+          uitziet én intuïtief is om te navigeren, zodat jouw klanten moeiteloos
+          kunnen vinden wat ze nodig hebben.
+          <br /><br />
+          Van het maken van prototypes tot het ontwerpen van aantrekkelijke
+          interfaces, we zijn er om jouw visie werkelijkheid te maken. Samen
+          creëren we een online ervaring die jouw klanten aanspreekt, hun
+          betrokkenheid vergroot en je bedrijf laat groeien.
+          <br /><br />
+          Kies voor onze passie en toewijding aan uitmuntend ontwerp. Samen
+          zetten we jouw bedrijf op de digitale kaart en zorgen we ervoor dat
+          jouw klanten keer op keer terugkomen.
+        </p>
       </div>
-    </section>
-
-    <!-- Newsletter section -->
-    <section
-      class="section-newsletter bg-center bg-cover bg-no-repeat bg-gray-500 bg-blend-multiply"
-      style="background-image: url(./images/newsletter.webp)"
+    </div>
+    <div
+      id="web"
+      class="grid grid-cols-1 lg:grid-cols-2 items-center py-[48px] lg:py-[96px] px-8 border-b-2 border-dotted border-[#a9a9a9] gap-x-2 lg:px-4"
     >
-      <div class="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div
-            class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2"
+      <div class="lg:px-5 z-row-col">
+        <div>
+          <h1
+            class="text-[#a9a9a9]/25 text-center text-5xl font-bold mb-[-14px]"
+            style="
+              background: -webkit-linear-gradient(
+                #a9a9a9 0%,
+                #a9a9a97c 50%,
+                #efefef 100%
+              );
+              -webkit-text-fill-color: transparent;
+            "
           >
-            <div class="max-w-xl lg:max-w-lg">
-              <h2
-                class="text-3xl font-bold tracking-tight text-white sm:text-4xl font-sans"
-              >
-                Schrijf je in voor onze nieuwsbrief.
-              </h2>
-              <p class="mt-4 text-lg leading-8 text-gray-200">
-                Blijf op de hoogte van het laatste nieuws en exclusieve
-                aanbiedingen.
-              </p>
-              <form
-                id="newsletterSignup"
-                action="/src/index"
-                method="POST"
-                class="mt-6 flex max-w-md gap-x-4"
-              >
-                <label for="email-address" class="sr-only">Email address</label>
-                <input
-                  id="emailNewsletterSignup"
-                  name="email"
-                  type="email"
-                  autocomplete="email"
-                  required
-                  class="min-w-0 flex-auto rounded-md border-0 bg-white px-3.5 py-2 text-slate-900 shadow-sm sm:text-sm sm:leading-6"
-                  placeholder="Coming soon..."
-                  disabled
-                />
-                <button
-                  id="submitNewsletterSignup"
-                  type="submit"
-                  class="flex-none rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500"
-                  disabled
-                >
-                  Aanmelden
-                </button>
-              </form>
-            </div>
-            <dl
-              class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2"
-            >
-              <div class="flex flex-col items-start">
-                <div
-                  class="rounded-md bg-red-500/75 p-2 ring-1 ring-red-500/10"
-                >
-                  <svg
-                    class="h-6 w-6 text-white"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
-                    />
-                  </svg>
-                </div>
-                <dt class="mt-4 font-semibold text-white">
-                  Maandelijkse artikelen
-                </dt>
-                <dd class="mt-2 leading-7 text-gray-200">
-                  Wij sturen je maandelijks een overzicht van de laatste updates
-                  en andere interessante artikelen.
-                </dd>
-              </div>
-              <div class="flex flex-col items-start">
-                <div
-                  class="rounded-md bg-red-500/75 p-2 ring-1 ring-red-500/10"
-                >
-                  <svg
-                    class="h-6 w-6 text-white"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002"
-                    />
-                  </svg>
-                </div>
-                <dt class="mt-4 font-semibold text-white">Geen spam</dt>
-                <dd class="mt-2 leading-7 text-gray-200">
-                  Bij ons geen spam, alleen relevante informatie.
-                </dd>
-              </div>
-            </dl>
-          </div>
+            Websites & Webshops
+          </h1>
+          <h3 class="text-center text-3xl font-bold mb-4 text-red-500">
+            Websites & Webshops
+          </h3>
+        </div>
+        <p class="text-gray-600">
+          Ontdek onze expertise in het bouwen van websites en webshops op maat.
+          Wij begrijpen dat een professionele online aanwezigheid essentieel is
+          voor jouw bedrijfssucces. Met onze toegewijde aanpak zorgen we ervoor
+          dat jouw website of webshop precies aansluit bij jouw wensen en
+          behoeften.
+          <br /><br />
+          Met een gemiddelde ontwikkeltijd van 1 á 2 maanden, nemen we de tijd
+          om jouw website of webshop tot in de puntjes te realiseren. Onze
+          maatwerkoplossingen zorgen ervoor dat elke pagina en functie perfect
+          afgestemd is op jouw bedrijf en doelgroep.
+          <br /><br />
+          Voor webshops implementeren we een gebruiksvriendelijk
+          winkelwagensysteem en bieden we integraties met iDEAL en
+          creditcardbetalingen, zodat jouw klanten eenvoudig en veilig kunnen
+          afrekenen.
+          <br /><br />
+          Samen creëren we een krachtige online aanwezigheid die jouw merk laat
+          stralen en jouw producten of diensten effectief presenteert aan jouw
+          doelgroep.
+        </p>
+      </div>
+      <picture>
+        <source srcset="images/ecom.webp" type="image/webp" />
+        <source srcset="images/ecom.png" type="image/png" />
+        <img
+          class="w-[100%] max-h-[350px] rounded-md drop-shadow-lg mb-8 lg:mb-0"
+          src="images/ecom.png"
+          alt=""
+        />
+      </picture>
+    </div>
+    <div
+      id="onderhoud"
+      class="grid grid-cols-1 lg:grid-cols-2 items-center pt-[48px] lg:py-[96px] px-8 gap-x-2 lg:px-4"
+    >
+      <picture>
+        <source srcset="images/onderhoud.webp" type="image/webp" />
+        <source srcset="images/onderhoud.png" type="image/png" />
+        <img
+          class="w-[100%] max-h-[350px] rounded-md drop-shadow-lg mb-8 lg:mb-0"
+          src="images/onderhoud.png"
+          alt=""
+        />
+      </picture>
+      <div class="lg:px-5">
+        <div>
+          <h1
+            class="text-[#a9a9a9]/25 text-center text-5xl font-bold mb-[-14px]"
+            style="
+              background: -webkit-linear-gradient(
+                #a9a9a9 0%,
+                #a9a9a97c 50%,
+                #efefef 100%
+              );
+              -webkit-text-fill-color: transparent;
+            "
+          >
+            Onderhoud & Updates
+          </h1>
+          <h3 class="text-center text-3xl font-bold mb-4 text-red-500">
+            Onderhoud & Updates
+          </h3>
+        </div>
+        <p class="text-gray-600">
+          Bij ons kun je rekenen op betrouwbaar onderhoud en frequente updates
+          voor jouw website. Hoewel we momenteel niet werken met een Content
+          Management Systeem (CMS), zorgen wij ervoor dat jouw website altijd
+          up-to-date blijft.
+          <br /><br />
+          Ons toegewijde team staat 24/7 voor je klaar om eventuele aanpassingen
+          of verbeteringen aan jouw website te realiseren. Of het nu gaat om
+          kleine wijzigingen of grotere aanpassingen, wij bieden flexibele
+          oplossingen die aansluiten bij jouw specifieke behoeften.
+          <br /><br />
+          Wij luisteren naar jouw wensen en passen de website aan volgens jouw
+          specificaties. Jouw tevredenheid staat bij ons centraal, en wij
+          streven ernaar om jouw website continu te optimaliseren, zodat deze
+          perfect aansluit bij jouw visie en doelstellingen.
+          <br /><br />
+          Met ons onderhouds- en updateservicepakket kun je gerust zijn, wetende
+          dat jouw website in goede handen is en altijd klaar is om jouw bedrijf
+          te ondersteunen en te laten groeien.
+        </p>
+      </div>
+    </div>
+    <div></div>
+    <div></div>
+  </section>
+
+  <!-- Portfolio/Cases section -->
+  <section class="py-[96px]">
+    <div class="max-w-[1280px] mx-auto">
+      <div>
+        <h1
+          class="text-[#a9a9a9]/25 text-center text-5xl font-bold mb-[-14px]"
+          style="
+            background: -webkit-linear-gradient(
+              #a9a9a9 0%,
+              #a9a9a97c 50%,
+              #efefef 100%
+            );
+            -webkit-text-fill-color: transparent;
+          "
+        >
+          Recente Opdrachten & Projecten
+        </h1>
+        <h3 class="text-center text-3xl font-bold mb-4 text-red-500 z-10">
+          Recente Opdrachten & Projecten
+        </h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8">
+        <div class="rounded-lg overflow-hidden relative">
+          <a href="https://hyperfitness.netlify.app/">
+            <picture>
+              <source
+                srcset="images/mockups/mockup-hyperfitness.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="images/mockups/mockup-hyperfitness.png"
+                type="image/png"
+              />
+              <img
+                class="h-[350px] w-full object-cover hover:bg-red-400"
+                src="images/mockups/mockup-hyperfitness.png"
+                alt=""
+              />
+            </picture>
+          </a>
+          <p
+            class="absolute bottom-5 left-[50%] translate-x-[-50%] font-bold text-2xl text-gray-800 lg:text-[#efefef]"
+          >
+            Hyperfitness
+          </p>
+        </div>
+        <div class="rounded-lg overflow-hidden relative">
+          <a href="https://thecarbuyersguide.netlify.app/">
+            <picture>
+              <source
+                srcset="images/mockups/mockup-TCBG.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="images/mockups/mockup-TCBG.png"
+                type="image/png"
+              />
+              <img
+                class="h-[350px] w-full object-cover hover:bg-red-400"
+                src="images/mockups/mockup-TCBG.png"
+                alt=""
+              />
+            </picture>
+          </a>
+          <p
+            class="absolute bottom-5 left-[50%] w-full translate-x-[-50%] font-bold text-2xl text-gray-800 lg:text-[#efefef] text-center leading-6"
+          >
+            The Car Buyers Guide
+          </p>
+        </div>
+        <div class="rounded-lg overflow-hidden relative">
+          <a href="https://earthenwarepottery.netlify.app/">
+            <picture>
+              <source
+                srcset="images/mockups/mockup-earthenware.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="images/mockups/mockup-earthenware.png"
+                type="image/png"
+              />
+              <img
+                class="h-[350px] w-full object-cover hover:bg-red-400"
+                src="images/mockups/mockup-earthenware.png"
+                alt=""
+              />
+            </picture>
+          </a>
+          <p
+            class="absolute bottom-5 w-full left-[50%] translate-x-[-50%] font-bold text-2xl text-gray-800 lg:text-[#efefef] text-center leading-6"
+          >
+            Earthenware Pottery
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <%- include("components/footer") %>
-  </body>
-</html>
+  <!-- Newsletter section -->
+  <section
+    class="section-newsletter bg-center bg-cover bg-no-repeat bg-gray-500 bg-blend-multiply"
+    style="background-image: url(./images/newsletter.webp)"
+  >
+    <div class="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2"
+        >
+          <div class="max-w-xl lg:max-w-lg">
+            <h2
+              class="text-3xl font-bold tracking-tight text-white sm:text-4xl font-sans"
+            >
+              Schrijf je in voor onze nieuwsbrief.
+            </h2>
+            <p class="mt-4 text-lg leading-8 text-gray-200">
+              Blijf op de hoogte van het laatste nieuws en exclusieve
+              aanbiedingen.
+            </p>
+            <form
+              id="newsletterSignup"
+              action="/src/index"
+              method="POST"
+              class="mt-6 flex max-w-md gap-x-4"
+            >
+              <label for="email-address" class="sr-only">Email address</label>
+              <input
+                id="emailNewsletterSignup"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                class="min-w-0 flex-auto rounded-md border-0 bg-white px-3.5 py-2 text-slate-900 shadow-sm sm:text-sm sm:leading-6"
+                placeholder="Coming soon..."
+                disabled
+              />
+              <button
+                id="submitNewsletterSignup"
+                type="submit"
+                class="flex-none rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500"
+                disabled
+              >
+                Aanmelden
+              </button>
+            </form>
+          </div>
+          <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+            <div class="flex flex-col items-start">
+              <div class="rounded-md bg-red-500/75 p-2 ring-1 ring-red-500/10">
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                  />
+                </svg>
+              </div>
+              <dt class="mt-4 font-semibold text-white">
+                Maandelijkse artikelen
+              </dt>
+              <dd class="mt-2 leading-7 text-gray-200">
+                Wij sturen je maandelijks een overzicht van de laatste updates
+                en andere interessante artikelen.
+              </dd>
+            </div>
+            <div class="flex flex-col items-start">
+              <div class="rounded-md bg-red-500/75 p-2 ring-1 ring-red-500/10">
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002"
+                  />
+                </svg>
+              </div>
+              <dt class="mt-4 font-semibold text-white">Geen spam</dt>
+              <dd class="mt-2 leading-7 text-gray-200">
+                Bij ons geen spam, alleen relevante informatie.
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%- include("components/footer") %>
+</body>
